@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: your-dockerhub-user/java-app:latest # Altere para a imagem do DockerHub
+          image: caiquelacerda15/my-java-app:latest
           ports:
             - containerPort: 8080
           env:
             - name: SPRING_PROFILES_ACTIVE
-              value: production
+              value: dev
