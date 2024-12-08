@@ -16,9 +16,18 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: caiquelacerda15/my-java-app:latest
+          image: caiquelacerda15/my-java-app:latest # Substituído automaticamente pelo GitHub Actions
           ports:
             - containerPort: 8080
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: dev
+            - name: JAVA_TOOL_OPTIONS
+              value: "-Xms512m -Xmx1024m -XX:MaxMetaspaceSize=256m"
+          resources:
+            requests:
+              memory: "1024Mi"
+              cpu: "500m"
+            limits:
+              memory: "2048Mi"
+              cpu: "1000m"
