@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: caiquelacerda15/my-java-app:latest # Substituído automaticamente pelo GitHub Actions
+          image: caiquelacerda15/my-java-app:20241208023608
           ports:
             - containerPort: 8080
           env:
