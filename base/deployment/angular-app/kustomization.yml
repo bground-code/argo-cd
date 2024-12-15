@@ -1,0 +1,3 @@
+resources:
+  - angular-app/deployment.yaml
+  - angular-app/service.yaml
