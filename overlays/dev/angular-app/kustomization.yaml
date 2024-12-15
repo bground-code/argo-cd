@@ -1,5 +1,5 @@
 resources:
-  - ../../base
+  - ../../../base/deployment/angular-app
 
 patchesStrategicMerge:
   - deployment-patch.yaml
