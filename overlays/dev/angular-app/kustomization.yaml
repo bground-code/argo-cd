@@ -1,5 +1,5 @@
 resources:
-  - ../../base
+  - ../../../base/angular-app
 
 patches:
   - path: deployment-patch.yaml
