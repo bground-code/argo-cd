@@ -1,5 +1,6 @@
 resources:
-../../../base/angular-app
+  - ../../../base/angular-app
 
-patchesStrategicMerge:
-  - deployment-patch.yaml
+patches:
+  - path: deployment-patch.yaml
+  - path: ingress-patch.yaml
