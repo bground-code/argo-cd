@@ -1,3 +1,4 @@
 resources:
-  - angular-app/deployment.yaml
-  - angular-app/service.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
